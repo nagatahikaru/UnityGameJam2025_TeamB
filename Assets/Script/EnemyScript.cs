@@ -3,15 +3,15 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
 
-    int EnemyState = 0;
-    public GameObject bullet;//
-    public GameObject player;//
-    public EnemyManager enemyManager;
-    Vector2 targetPosition;//   
-    float duration = 0.3f;
-    float t = 0.0f;
-    Vector2 basePosition;//自身のポジション変数
-    bool Moveflag = true;
+    int                 EnemyState = 0;   //敵の状態を定める変数
+    public GameObject   bullet;           //弾丸を定めるパブリック
+    public GameObject   player;           //プレイヤーを定めるパブリック
+    public EnemyManager enemyManager;     //敵のマネージャー
+    Vector2             targetPosition;   //目的地のポジション
+    float               duration =   0.3f;//カーブの時間
+    float               t =          0.0f;//カーブの中点
+    Vector2             basePosition;     //自身のポジション変数
+    bool                Moveflag =   true;//移動フラグ
 
 
     void Start()
@@ -49,9 +49,9 @@ public class EnemyScript : MonoBehaviour
         //目的地のxyをランダムで決める
         if (Moveflag == true)
         {   //xの位置をランダム決定
-            float x = Random.Range(929.0f, 938.0f);
+            float x = Random.Range(-2.0f, 9.5f);
             //yの位置をランダムで決める
-            float y = Random.Range(548.0f, 538.0f);
+            float y = Random.Range(-4.0f, 6.0f);
 
             targetPosition = new Vector2(x, y);
             EnemyState = Random.Range(0, 3);

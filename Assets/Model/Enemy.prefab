@@ -119,9 +119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 146215914dcec1543bf4dc6c6296ef14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 4252426558600394454, guid: 8f3a5fbce0027ed40bbc6a74f44d8445, type: 3}
+  bullet: {fileID: 4252426558600394454, guid: 8a0710e5117062b4fb908c0a13649208, type: 3}
   player: {fileID: 3184517371351552984, guid: bc0aae0f6c6167441bda2160e8395f9d, type: 3}
-  enemyManager: {fileID: 0}
+  enemyManager: {fileID: 8347092234707551256, guid: 5f54b273dd05078478a27a972be2c2d1, type: 3}
 --- !u!114 &6438820195229630503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,13 +134,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97202e51a83b56c499411a133a7c8036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 4252426558600394454, guid: 8f3a5fbce0027ed40bbc6a74f44d8445, type: 3}
+  bulletPrefab: {fileID: 4252426558600394454, guid: 8a0710e5117062b4fb908c0a13649208, type: 3}
   player: {fileID: 3184517371351552984, guid: bc0aae0f6c6167441bda2160e8395f9d, type: 3}
-  sound: {fileID: 8300000, guid: 9c7c1a9c227807441a192d59da09a1eb, type: 3}
+  sound: {fileID: 8300000, guid: 3b4a54dcd0797fe439d69ebff908d71a, type: 3}
   BulletSpeed: 25
   start: 1
   interval: 2
   flagstart: 2
   flaginterval: 5
   desprn: 6
+  EnemyATK: 10
   direction: {x: 0, y: 0}

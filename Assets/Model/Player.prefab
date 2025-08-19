@@ -120,8 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  playerHp: 100
-  EnemyAtk: 10
+  playerHP: 100
 --- !u!114 &6962988522177392655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +135,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerbulletPrefab: {fileID: 1405320987150113690, guid: 6791d934d38d09840820282094cc7e61, type: 3}
   enemy: {fileID: 6905031187778108014, guid: aadd6127718d23c40a9ae578e1f27981, type: 3}
-  sound: {fileID: 8300000, guid: 9c7c1a9c227807441a192d59da09a1eb, type: 3}
+  sound: {fileID: 8300000, guid: 3b4a54dcd0797fe439d69ebff908d71a, type: 3}
   BulletSpeed: 15
   desprn: 3
+  posisyonx: 1
+  energy: 100
+  consumableenergy: 10
+  acquisitionenergy: 20
