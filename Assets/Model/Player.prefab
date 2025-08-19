@@ -120,8 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  playerHp: 100
-  EnemyAtk: 10
+  playerHP: 100
 --- !u!114 &6962988522177392655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,3 +138,7 @@ MonoBehaviour:
   sound: {fileID: 8300000, guid: 3b4a54dcd0797fe439d69ebff908d71a, type: 3}
   BulletSpeed: 15
   desprn: 3
+  posisyonx: 1
+  energy: 100
+  consumableenergy: 10
+  acquisitionenergy: 20

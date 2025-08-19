@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private Vector2 direction;
-    private Rigidbody rd;
-    public float speed;   
+    private Vector2   direction;//’eŠÛ‚ªi‚Ş•ûŒü
+    private Rigidbody rd;       // Rigidbody‚ğ’è‹`‚µ‚Ä’eŠÛ‚Ì“®‚«‚ğ§Œä‚·‚é
+    public  float      speed;   //’eŠÛ‚Ì‘¬“x
+    public  int EnemyATK;       //“G‚ÌUŒ‚—Í
+
     void Awake()
     {
       rd = GetComponent<Rigidbody>();

@@ -6,18 +6,18 @@ using UnityEngine.UIElements;
 
 public class BulletScript : MonoBehaviour
 {
-    public GameObject bulletPrefab;//弾丸を定めるパブリック
-    public GameObject player;
-    public AudioClip sound;//射出時の効果音
-    public float BulletSpeed;   
-    public float start;//始めに打つタイミング
-    public float interval;//打ってから再び打つ間隔
-    public float flagstart;//始めにフラグを変えるタイミング
-    public float flaginterval;//フラグを再び変えるタイミング
-    public float desprn;//弾丸が消えるタイミング
-    private int BulletState;//ランダムに方向のステートを定める
-    public Vector2 direction;//方向        
-    bool bulletflag;
+    public  GameObject bulletPrefab;//弾丸を定めるパブリック
+    public  GameObject player;      //プレイヤーを定めるパブリック
+    public  AudioClip  sound;       //射出時の効果音
+    public  float      BulletSpeed; //弾丸の速度   
+    public  float      start;       //始めに打つタイミング
+    public  float      interval;    //打ってから再び打つ間隔
+    public  float      flagstart;   //始めにフラグを変えるタイミング
+    public  float      flaginterval;//フラグを再び変えるタイミング
+    public  float      desprn;      //弾丸が消えるタイミング
+    private int        BulletState; //ランダムに方向のステートを定める
+    public  Vector2    direction;   //方向        
+    bool               bulletflag;  //弾丸のフラグ
     void Start()
     {
         // 指定したメソッドを、指定した時間（単位；秒）から、指定した間隔（単位；秒）で繰り返し実行する。

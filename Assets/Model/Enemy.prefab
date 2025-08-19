@@ -143,4 +143,5 @@ MonoBehaviour:
   flagstart: 2
   flaginterval: 5
   desprn: 6
+  EnemyATK: 10
   direction: {x: 0, y: 0}

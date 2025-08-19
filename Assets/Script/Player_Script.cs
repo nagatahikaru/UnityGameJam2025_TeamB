@@ -8,17 +8,12 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 public class Player_Script : MonoBehaviour
-{
-    public float moveSpeed = 0.0f;
-    float stickLx = 0.0f;
-    float stickLy = 0.0f;
-    public int playerHp;  
-    public int EnemyAtk;
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
+{    
+    public float moveSpeed = 0.0f;//プレイヤーの移動速度
+    float        stickLx   = 0.0f;//Lスティックのx軸
+    float        stickLy   = 0.0f;//Lスティックのy軸
+    public int   playerHP;        //プレイヤーのHP
+    int          EnemyAtk;        //敵の攻撃力
     // Update is called once per frame
     void Update()
     {
@@ -26,12 +21,13 @@ public class Player_Script : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-
-        //
+        //攻撃を受けたときの処理
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            GetComponent<Rigidbody>();
-            playerHp = playerHp - EnemyAtk;
+            //Bulletのスクリプトを取得してEnemyAtkに代入
+            EnemyAtk = collision.gameObject.GetComponent<Bullet>().EnemyATK; //BulletのEnemyATKをEnemyAtkに代入
+            //プレイヤーのHPを減らす
+            playerHP = playerHP - EnemyAtk;
         }
     }
     //プレイヤーの移動
